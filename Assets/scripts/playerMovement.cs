@@ -50,12 +50,4 @@ public class playerMovement : MonoBehaviour {
             }
         }
     }
-
-    void OnCollisionEnter(Collision c) {
-        
-    }
-
-    void OnCollisionExit(Collision c) {
-        
-    }
 }

@@ -14,10 +14,7 @@ public class randomScare : MonoBehaviour {
         Random.seed = (int)Time.realtimeSinceStartup;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+	void Update () {}
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject == player && !audioComp.isPlaying && Random.value <= rate ) {

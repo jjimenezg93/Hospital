@@ -17,6 +17,5 @@ public class cameraRotation : MonoBehaviour {
         yRotation = Input.GetAxis("Mouse Y") * rotSpeed * Time.deltaTime;
         transform.forward = Quaternion.AngleAxis(xRotation, transform.up) * transform.forward;
         transform.forward = Quaternion.AngleAxis(-yRotation, transform.right) * transform.forward;
-        //transform.Rotate(-yRotation, 0, 0);
     }
 }

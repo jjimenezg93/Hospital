@@ -20,8 +20,6 @@ public class pickObject : MonoBehaviour {
                 if (obj.CompareTag("pickable")) {
                     player.GetComponent<inventory>().AddObject(obj);
                     obj.SetActive(false);
-                    //obj.GetComponent<Renderer>().enabled = false;
-                    Debug.DrawLine(transform.position, hit.point, Color.red);
                 }
             }
         }

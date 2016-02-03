@@ -23,7 +23,6 @@ public class randomLighting : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
 	void Update () {
         lastChange += Time.deltaTime;
 	    if (Random.value <= randRate && lastChange >= lastChangeMinTime) {

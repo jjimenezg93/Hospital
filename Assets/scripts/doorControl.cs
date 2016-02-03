@@ -18,7 +18,7 @@ public class doorControl : MonoBehaviour {
         audioComp.enabled = true;
 	}
 	
-	void Update () { }
+	void Update () {}
 
     void OnTriggerEnter(Collider other) {
         if (other.gameObject == player && (neededObject == null || player.GetComponent<inventory>().IsObject(neededObject))) {
